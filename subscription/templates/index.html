@@ -1,17 +1,23 @@
-<html>
+<!--<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Trishna Guha" />
 
     <title>Subscribe For Free Book:PacktPub</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="/home/trishna/Workspace/PacktPubSubscription/appsubscribe/static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
   </head>
-  <body>
+  <body>-->
+{% extends "base.html" %}
+
+{% block title %}Subscribe For Free Book:PacktPub{% endblock %}
+
+{% block content %}
     <form action="#" method="post" name="subscribe">
       <div class="header">
          <p><a href="https://www.packtpub.com"; target="_blank">PacktPub</a> Free Book Subscription</p>
@@ -24,9 +30,10 @@
         <input type="submit" class="button" id="submit" value="Subscribe">
       </div>
     </form>
-      <div class="footer">
+{% endblock %}
+<!--      <div class="footer">
 	Copyright &copy; 2016 by <a href="https://trishnag.wordpress.com" style="text-decoration:none"; target="_blank">Trishna Guha</a>.
         <a href="https://github.com/trishnaguha/PacktPubSubscription"; target="_blank"><u>Show Source</u></a>
       </div>
   </body>
-</html>
+</html>-->
