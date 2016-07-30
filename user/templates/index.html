@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Subscribe For Free Book:PacktPub{% endblock %}
+
+{% block content %}
+
+    <form action="/subscribe" method="POST">
+      <div class="header">
+         <p><a href="https://www.packtpub.com"; target="_blank">PacktPub</a> Free Book Subscription</p>
+      </div>
+      <div class="description">
+        <p>Get Alert On The Free Book Everyday</p>
+      </div>
+      <div class="input">
+        <input type="text" class="button" id="email" name="email" placeholder="Enter Your Email Address">
+        <input type="submit" class="button" id="submit" value="Subscribe">
+      </div>
+    </form>
+
+{% endblock %}
